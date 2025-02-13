@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class Portfolio extends Controller
+class StaticController extends Controller
 {
     public function home()
     {
