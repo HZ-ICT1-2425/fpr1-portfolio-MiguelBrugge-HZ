@@ -12,6 +12,15 @@ body{
     display: none;
 }
 
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 4px;
+}
+
 button:hover{
     transform: scale(1.05);
     cursor: pointer;
@@ -31,6 +40,63 @@ button:hover{
 
 .page{
     margin-top: 150px !important;
+}
+
+input, textarea{
+    background-color: var(--grey);
+    border: none;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    outline: var(--primary) 2px solid;
+}
+
+.form-control{
+    background-color: var(--grey) !important;
+    border: none !important;
+}
+
+.action-holder:hover{
+    cursor: pointer;
+}
+
+.action-holder .fa-trash:hover{
+    color: red;
+}
+
+.action-holder .fa-edit:hover{
+    color: orange;
+}
+
+#create-edit-wrapper{
+    overflow-y: auto;
+    max-height: 60vh !important;
+}
+
+#create-edit-wrapper::-webkit-scrollbar {
+    width: 10px; /* Set a width for the vertical scrollbar */
+    display: block;
+}
+
+/*Modal*/
+.modal-content{
+    background-color: var(--grey) !important;
+    border: solid 2px black !important;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    border: none !important;
+    padding: 0 !important;
+}
+
+.cancel-button{
+    border-color: white;
+    color: white;
+}
+
+.delete-button{
+    background-color: red;
 }
 
 /* Navigation */
@@ -187,7 +253,7 @@ tr:nth-child(even) {
     margin-top: 100px;
 }
 
-#faq details{
+#faq details, .action-holder{
     border: solid 3px var(--grey);
     user-select: none;
 }
@@ -215,29 +281,27 @@ tr:nth-child(even) {
     margin-top: 100px;
 }
 
-#blog button{
+#blog #blog-posts .blog-item{
     border: solid 3px transparent;
     background: black;
 }
 
-#blog button:hover a{
+#blog #blog-posts .blog-item:hover a{
     color: var(--primary) !important;
 }
 
-#blog button:hover{
+#blog #blog-posts .blog-item:hover{
+    cursor: pointer;
     border: solid 3px var(--primary);
 }
 
-#blog button a{
+#blog #blog-posts .blog-item a{
     text-decoration: none !important;
     font-style: italic;
 }
 
 #blog p{
     word-break: break-all;
-}
-#blog button:hover{
-    transform: scale(1) !important;
 }
 
 .blog-post img{

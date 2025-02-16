@@ -4,11 +4,11 @@
         <h1 class="text-center">Why HBO-ICT is my pathway <br> to success</h1>
         <h3 class="fw-light">Exploring My Passion for Technology and Innovation</h3>
         <div id="cta" class="d-flex justify-content-center gap-4">
-            <x-ui.button link="{{ route('profile') }}">
-                My Profile
+            <x-ui.button :link="route('posts.index')" ghostButton>
+                Blog
             </x-ui.button>
-            <x-ui.button link="{{ route('blogs') }}" ghostButton>
-                Blogs
+            <x-ui.button :link="route('profile')">
+                My Profile
             </x-ui.button>
         </div>
     </section>

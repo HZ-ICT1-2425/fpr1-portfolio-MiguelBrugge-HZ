@@ -4,8 +4,16 @@
         <h3>Useful links</h3>
         <hr>
         <ul class="list-unstyled d-flex flex-column gap-3 m-0">
-            <li><a href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754">The HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
-            <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20240412.pdf?_gl=1*1us1txq*_up*MQ..&gclid=Cj0KCQjwiuC2BhDSARIsALOVfBKurbY7bDLmshx8x2BGn1gRz97T8jy3Tz_x_yvpk8ipMFH4tgeMWnEaAt2hEALw_wcB">The Implementation Regulations (IR) of the HBO-ICT program</a></li>
+            <li>
+                <a href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754">
+                    The HZ HBO-ICT Course and Examination Regulations (CER)
+                </a>
+            </li>
+            <li>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20240412.pdf?_gl=1*1us1txq*_up*MQ..&gclid=Cj0KCQjwiuC2BhDSARIsALOVfBKurbY7bDLmshx8x2BGn1gRz97T8jy3Tz_x_yvpk8ipMFH4tgeMWnEaAt2hEALw_wcB">The
+                    Implementation Regulations (IR) of the HBO-ICT program
+                </a>
+            </li>
             <li><a href="https://learn.hz.nl/my/">HZ Learn environment</a></li>
             <li><a href="https://hz.osiris-student.nl/voortgang">Study Progress</a></li>
             <li><a href="https://github.com/HZ-HBO-ICT">HZ Github</a></li>
@@ -18,7 +26,8 @@
                     <h1 class="">Dashboard</h1>
                     <button id="link-button" onclick="openSideMenu()"
                             class="ghost-button fw-bold rounded-pill px-3 py-1 border-none">Open
-                        links</button>
+                        links
+                    </button>
                 </div>
                 <div id="table-wrapper" class="rounded-3">
                     <!-- Table -->
@@ -42,7 +51,6 @@
                 </div>
                 <span><span id="total-credits"></span> / 60 EC's</span>
                 <p class="m-0 float-end">Minimum credits required to pass (NBSA): 45 EC</p>
-
             </section>
         </div>
     </section>
