@@ -15,7 +15,8 @@ class FaqController extends Controller
      */
     public function index() : View
     {
-        return view('faq.index', ['faq' => Faq::all()]);
+        $faq = Faq::orderBy('created_at', 'desc')->paginate(10);
+        return view('faq.index', ['faq' => $faq]);
     }
 
     /**

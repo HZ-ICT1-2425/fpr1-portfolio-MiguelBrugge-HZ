@@ -1,4 +1,4 @@
-<nav class="py-3 d-flex justify-content-between align-items-center position-fixed w-100">
+<nav id="navigation" class="py-3 d-flex justify-content-between align-items-center position-fixed w-100">
     <a href={{ route('home') }}>
         <button class="d-flex gap-2 align-items-center rounded-3 p-1">
             <img class="rounded-pill" src="{{ asset('images/profile-picture.png') }}" alt="Miguel's profile picture" width="40">

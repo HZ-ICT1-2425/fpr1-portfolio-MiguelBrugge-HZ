@@ -100,41 +100,41 @@ input:focus, textarea:focus{
 }
 
 /* Navigation */
-nav{
-    top: 0;
+#navigation{
+    top: 1em;
 }
 
-nav, section{
+#navigation, section{
     padding: 0px 15vw !important;
 }
 
-nav a, aside a{
+#navigation a, aside a{
     color: white;
     text-decoration: none;
 }
 
-nav .active{
+#navigation .active{
     color: var(--primary);
     text-decoration: none;
 }
 
-nav a:hover, aside a:hover{
+#navigation a:hover, aside a:hover{
     opacity: .7;
     text-decoration: none;
 }
 
-nav button{
+#navigation button{
     background: none;
     border: none;
     color: white;
 }
 
-nav button:hover{
+#navigation button:hover{
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.142);
 }
 
-nav img{
+#navigation img{
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -188,7 +188,7 @@ nav img{
 
 /* Dashboard */
 #dashboard{
-    margin-top: 80px !important;
+    margin-top: 100px !important;
 }
 
 aside{

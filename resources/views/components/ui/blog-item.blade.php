@@ -1,4 +1,4 @@
-<div onclick="window.location.href='{{ route('posts.show', $post) }}'"
+<div onclick="window.location.href='{{ route('posts.show', ['slug' => $post->slug, 'post' => $post]) }}'"
         class="blog-item col-md-6 p-2 rounded-3 text-start d-flex flex-column gap-2">
     <div class="d-flex align-items-center gap-3 w-100">
         <img class="rounded-3" src="{{ asset($post->icon_path) }}" alt="Image" width="50">

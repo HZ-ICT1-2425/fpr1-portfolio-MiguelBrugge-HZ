@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use Illuminate\View\View;
 
 class StaticController extends Controller
@@ -21,7 +22,7 @@ class StaticController extends Controller
      */
     public function dashboard()
     {
-        return view('dashboard');
+        return view('dashboard', ['courses' => Course::all()]);
     }
 
     /**

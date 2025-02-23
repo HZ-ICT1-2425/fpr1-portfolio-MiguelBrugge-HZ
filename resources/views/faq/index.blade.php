@@ -18,5 +18,6 @@
                 There are no FAQs
             @endif
         </div>
+        <x-ui.pagination :items="$faq"/>
     </section>
 </x-layout.main>

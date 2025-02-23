@@ -16,7 +16,8 @@ class PostController extends Controller
      */
     public function index() : View
     {
-        return view('posts.index', ['posts' => Post::orderBy('created_at', 'desc')->get()]);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+        return view('posts.index', ['posts' => $posts]);
     }
 
     /**
@@ -24,7 +25,7 @@ class PostController extends Controller
      * @return View Page to load
      * Post page
      */
-    public function show(Post $post) : View
+    public function show(string $slug, Post $post) : View
     {
         return view('posts.show', ['post' => $post]);
     }
@@ -58,6 +59,7 @@ class PostController extends Controller
 
         // Create a new post instance
         $post = Post::create($validated);
+        $post->slug = Str::slug($post->title);
         // Handle the icon upload
         $this->handleImageUpload($request, $post);
         $post->save();
