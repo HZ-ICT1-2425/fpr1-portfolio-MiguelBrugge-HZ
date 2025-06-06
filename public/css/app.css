@@ -1,0 +1,323 @@
+:root{
+    --primary: #00FFB7;
+    --grey: #202020;
+}
+
+body{
+    background-color: black !important;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 4px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.button{
+    background-color: var(--primary);
+    border: none;
+}
+
+.ghost-button{
+    background: none;
+    color: var(--primary);
+    border-color: var(--primary);
+    border-style: solid;
+}
+
+.page{
+    margin-top: 150px !important;
+}
+
+input, textarea{
+    background-color: var(--grey);
+    border: none;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    outline: var(--primary) 2px solid;
+}
+
+.form-control{
+    background-color: var(--grey) !important;
+    border: none !important;
+}
+
+.action-holder:hover{
+    cursor: pointer;
+}
+
+.action-holder .fa-trash:hover{
+    color: red;
+}
+
+.action-holder .fa-edit:hover{
+    color: orange;
+}
+
+#create-edit-wrapper{
+    overflow-y: auto;
+    max-height: 60vh !important;
+}
+
+#create-edit-wrapper::-webkit-scrollbar {
+    width: 10px; /* Set a width for the vertical scrollbar */
+    display: block;
+}
+
+/*Modal*/
+.modal-content{
+    background-color: var(--grey) !important;
+    border: solid 2px black !important;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    border: none !important;
+    padding: 0 !important;
+}
+
+.cancel-button{
+    border-color: white;
+    color: white;
+}
+
+.delete-button{
+    background-color: red;
+}
+
+/* Navigation */
+#navigation{
+    top: 1em;
+}
+
+#navigation, section{
+    padding: 0px 15vw !important;
+}
+
+#navigation a, aside a{
+    color: white;
+    text-decoration: none;
+}
+
+#navigation .active{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+#navigation a:hover, aside a:hover{
+    opacity: .7;
+    text-decoration: none;
+}
+
+#navigation button{
+    background: none;
+    border: none;
+    color: white;
+}
+
+#navigation button:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.142);
+}
+
+#navigation img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background-color: #c0cac5;
+}
+
+/* Home */
+#home {
+    background-image: url("../images/home-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+#home h1{
+    transform: scale(1.7);
+}
+
+#cta button{
+    width: 12rem;
+}
+
+/* Home/Content */
+#content article{
+    margin-top: 200px;
+    padding: 0 30px;
+}
+
+#content img{
+    max-width: 100%;
+    height: 250px;
+    border-color: var(--primary);
+    border: solid 8px var(--primary);
+    transform: rotate(4deg);
+}
+
+#content article:first-child img{
+    transform: rotate(-1deg);
+}
+
+/* Profile */
+#profile img, .blog-post img{
+    border: solid 8px var(--primary);
+    transform: rotate(4deg);
+    max-width: 350px;
+    object-fit: cover;
+}
+
+/* Dashboard */
+#dashboard{
+    margin-top: 100px !important;
+}
+
+aside{
+    border: solid 3px var(--grey);
+    background-color: black;
+}
+
+aside a{
+    color: var(--primary);
+}
+
+#table-wrapper{
+    height: 65vh;
+    overflow: auto;
+    border: solid 5px var(--grey);
+}
+
+table, td, th {
+    padding: 10px;
+    width: max-content;
+}
+
+tr:nth-child(even) {
+    background-color: var(--grey) !important;
+}
+
+#dashboard .status-not-started{
+    background-color: orange;
+}
+
+#dashboard .status-failed{
+    background-color: red;
+}
+
+#dashboard .status-completed{
+    background-color: #00c88f;
+}
+
+#dashboard .status-unknown{
+    background-color: rebeccapurple;
+}
+
+#dashboard .status{
+    font-weight: bold;
+    border: solid 5px black;
+}
+
+#link-button{
+    height: min-content;
+}
+
+#progress-bar-rails{
+    background-color: var(--grey);;
+}
+
+#progress-bar{
+    background-color: var(--primary) !important;
+}
+
+/* FAQ */
+#faq{
+    margin-top: 100px;
+}
+
+#faq details, .action-holder{
+    border: solid 3px var(--grey);
+    user-select: none;
+}
+
+#faq details[open] {
+    border-color: var(--primary);
+}
+
+#faq details summary{
+    font-weight: bold;
+}
+
+#faq details:hover{
+    cursor: pointer;
+    transform: scale(1.02) !important;
+}
+
+#faq a, a{
+    color: var(--primary);
+}
+
+/* Blog */
+#blog{
+    width: 100%;
+    margin-top: 100px;
+}
+
+#blog #blog-posts .blog-item{
+    border: solid 3px transparent;
+    background: black;
+}
+
+#blog #blog-posts .blog-item:hover a{
+    color: var(--primary) !important;
+}
+
+#blog #blog-posts .blog-item:hover{
+    cursor: pointer;
+    border: solid 3px var(--primary);
+}
+
+#blog #blog-posts .blog-item a{
+    text-decoration: none !important;
+    font-style: italic;
+}
+
+#blog p{
+    word-break: break-all;
+}
+
+.blog-post img{
+    object-fit: fill;
+}
+
+.post-return-link{
+    top: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    section{
+        padding: 0 50px !important;
+    }
+    #content img{
+        max-width: 110%;
+        height: 200px;
+    }
+}
