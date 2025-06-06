@@ -30,10 +30,5 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Install dependencies and build assets, run migrations, then start Apache
-CMD bash -c "\
-    composer install && \
-    npm install && \
-    npm run dev && \
-    php artisan config:cache && \
-    php artisan migrate:fresh --seed --force && \
-    apache2-foreground"
+CMD bash -c "composer install && npm install && npm run build && php artisan config:cache && php artisan migrate:fresh --seed --force && apache2-foreground"
+
