@@ -26,4 +26,4 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
 # Run Laravel setup during container start
-CMD bash -c "composer install && php artisan config:cache && php artisan migrate --force && apache2-foreground"
+CMD bash -c "composer install && php artisan config:cache && php artisan migrate:fresh --seed --force && apache2-foreground"
