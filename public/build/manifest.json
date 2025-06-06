@@ -1,6 +1,11 @@
 {
+  "resources/css/app.css": {
+    "file": "assets/app-BSdb-JCS.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
-    "file": "assets/app-Xaw6OIO1.js",
+    "file": "assets/app-C6cp8IRy.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
